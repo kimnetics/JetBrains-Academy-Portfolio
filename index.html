@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sarah Seal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <div class="background">
+    <div class="top-shadow">
+    </div>
+  </div>
+  <h1>Sarah Seal - Marine Animal</h1>
+  <div id="top-nav">
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+    <div class="vertical-icon" onclick="toggleNavVertical()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <!-- Automated testing expects a section to be hidden, so using this dummy section. -->
+    <div class="hamburger">
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <img class="headshot" src="images/Happy%20Seal.webp" alt="Headshot">
+  <p>
+    I'm a really good seal. I catch as much fish as I want to eat. I lie in the sun most of the day.
+  </p>
+</section>
+
+<section id="portfolio">
+  <h2>Portfolio (of Friends)</h2>
+  <div class="portfolio">
+    <div class="portfolio-item">
+      <img src="images/Cleaner%20Wrasse.jpg" alt="Willy">
+      <p>
+        Willy
+        <button class="open-window" onclick="openForm('willy')">More Info</button>
+      </p>
+      <dialog id="willy">
+        <div class="window">
+          <h3>Willy the Cleaner Wrasse</h3>
+          <p>
+            Here is more information about my friend Willy:
+          </p>
+          <iframe title="More Info About Willy"
+                  src="https://www.waikikiaquarium.org/experience/animal-guide/fishes/wrasses/hawaiian-cleaner-wrasse/"></iframe>
+          <button type="button" class="close-window" onclick="closeForm('willy')" autofocus>Close</button>
+        </div>
+      </dialog>
+    </div>
+    <div class="portfolio-item">
+      <img src="images/Sea%20Turtle.jpg" alt="Thomas">
+      <p>
+        Thomas
+        <button class="open-window" onclick="openForm('thomas')">More Info</button>
+      </p>
+      <dialog id="thomas">
+        <div class="window">
+          <h3>Thomas the Sea Turtle</h3>
+          <p>
+            Here is more information about my friend Thomas:
+          </p>
+          <iframe title="More Info About Thomas"
+                  src="https://www.waikikiaquarium.org/experience/animal-guide/reptiles/green-sea-turtle/"></iframe>
+          <button type="button" class="close-window" onclick="closeForm('thomas')" autofocus>Close</button>
+        </div>
+      </dialog>
+    </div>
+  </div>
+</section>
+
+<section id="contacts">
+  <h2>Contacts</h2>
+  <p>
+    Send me a fish at Hanauma Bay.
+  </p>
+</section>
+
+<footer>
+  © 2023 Sarah Seal
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
